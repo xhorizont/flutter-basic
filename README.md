@@ -1,6 +1,6 @@
 # flutter-basic
 Flutter basic tutorial
-```ruby
+```php
 void main() {
   print("Flutter is amazing");
   print(
