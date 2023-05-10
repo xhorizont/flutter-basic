@@ -1,6 +1,6 @@
 # flutter-basic
 Flutter basic tutorial
-```php
+```javascript
 void main() {
   print("Flutter is amazing");
   print(
