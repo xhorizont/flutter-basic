@@ -1,9 +1,9 @@
 # flutter-basic
 Flutter basic tutorial
 
-'''bash
+```bash
 flutter create --org com.myname my_app_name
-'''
+´´´
 
 ```javascript
 void main() {
