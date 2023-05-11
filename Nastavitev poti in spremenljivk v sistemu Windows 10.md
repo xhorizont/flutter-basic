@@ -1,0 +1,7 @@
+- Nastavitev poti in spremenljivk v sistemu Windows 10
+- Pritisnite Windows key+X za dostop do menija opravil naprednega uporabnika .
+- V meniju opravil Power User izberite možnost System .
+- V oknu O programu kliknite povezavo Napredne sistemske nastavitve pod Sorodnimi nastavitvami na skrajni desni strani.
+- V oknu System Properties (Lastnosti sistema) kliknite zavihek Advanced (Napredno ) in nato gumb Environment Variables (Spremenljivke okolja) na dnu tega zavihka.
+- V oknu Okoljske spremenljivke (na spodnji sliki) označite spremenljivko Pot v razdelku Sistemske spremenljivke in kliknite gumb Uredi.
+- Ko ustvarite ali spremenite spremenljivke okolja, znova zaženite računalnik, da te spremembe začnejo veljati v sistemu Windows.
