@@ -1,6 +1,9 @@
 # flutter-basic
 Flutter basic tutorial
 
+# Povezave
+https://docs.flutter.dev/
+
 ```bash
 flutter create --org com.myname my_app_name
 ```
