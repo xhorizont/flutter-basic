@@ -6,6 +6,7 @@ Flutter basic tutorial
 
  - https://code.visualstudio.com/ - VS Code
  - https://developer.android.com/studio - Android Studio
+ - https://github.com/git-for-windows/git/releases/download/v2.40.1.windows.1/Git-2.40.1-64-bit.exe - Git
  - https://docs.flutter.dev/ - Dokumentacija
  - https://docs.flutter.dev/get-started/install - Namestitev
 	 - https://docs.flutter.dev/get-started/install/windows
