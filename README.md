@@ -4,10 +4,10 @@ Flutter basic tutorial
 
 # Povezave
 
- - https://code.visualstudio.com/
- - https://developer.android.com/studio
+ - https://code.visualstudio.com/ - VS Code
+ - https://developer.android.com/studio - Android Studio
  - https://docs.flutter.dev/ - Dokumentacija
- - https://docs.flutter.dev/get-started/install
+ - https://docs.flutter.dev/get-started/install - Namestitev
 	 - https://docs.flutter.dev/get-started/install/windows
 	 - https://docs.flutter.dev/get-started/install/macos
 	 - https://docs.flutter.dev/get-started/install/linux
