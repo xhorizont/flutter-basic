@@ -6,7 +6,7 @@ Flutter basic tutorial
 
  - https://code.visualstudio.com/
  - https://developer.android.com/studio
- - https://docs.flutter.dev/
+ - https://docs.flutter.dev/ - Dokumentacija
  - https://docs.flutter.dev/get-started/install
 	 - https://docs.flutter.dev/get-started/install/windows
 	 - https://docs.flutter.dev/get-started/install/macos
