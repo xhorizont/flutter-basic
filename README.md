@@ -3,7 +3,7 @@ Flutter basic tutorial
 
 ```bash
 flutter create --org com.myname my_app_name
-´´´
+```
 
 ```javascript
 void main() {
