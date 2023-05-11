@@ -1,14 +1,14 @@
+
 # flutter-basic
 Flutter basic tutorial
 
 # Povezave
-https://docs.flutter.dev/
-https://docs.flutter.dev/get-started/install
-  https://docs.flutter.dev/get-started/install/windows
-  https://docs.flutter.dev/get-started/install/macos
-  https://docs.flutter.dev/get-started/install/linux
 
-
+ - https://docs.flutter.dev/
+ - https://docs.flutter.dev/get-started/install
+	 - https://docs.flutter.dev/get-started/install/windows
+	 - https://docs.flutter.dev/get-started/install/macos
+	 - https://docs.flutter.dev/get-started/install/linux
 
 
 ```bash
