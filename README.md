@@ -210,7 +210,7 @@ minSdkVersion 17
 # Spremenimo ime pod ikono
 
 android/app/src/main/AndroidManifest.xml
-
+```javascript
 // staro
 <application
      android:label="sampletwo"
@@ -219,3 +219,5 @@ android/app/src/main/AndroidManifest.xml
 <application
      android:label="Super App"
      android:icon="@mipmap/ic_launcher">
+
+```
