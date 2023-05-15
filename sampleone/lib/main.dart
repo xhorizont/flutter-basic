@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 58, 118, 183)),
-        useMaterial3: true,
-      ),
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color.fromARGB(255, 58, 118, 183)),
+          useMaterial3: true,
+          iconTheme: const IconThemeData(color: Colors.black)),
       home: const MyHomePage(title: 'Prva aplikacija'),
     );
   }
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counter += 10;
     });
   }
 

@@ -35,6 +35,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 [√] Connected device (3 available)
 [√] Network resources
 ```
+
 # Ustvarimo prvo aplikacijo
 
 ```bash
@@ -42,6 +43,8 @@ flutter create --org com.myname my_app_name
 ```
 
 # Preverimo delovanje v simulatorju
+
+---
 
 # Onemogočimo Debug Banner
 
@@ -57,16 +60,19 @@ MaterialApp(
 );
 ```
 
+# Dodamo dostop do interneta
+
+/android/app/src/main/AndroidManifest. Xml
+
 
 ```javascript
-void main() {
-  print("Flutter is amazing");
-  print(
-      "Flutter Example apps repo is the collections of awesome apps built with flutter");
-}
+<manifest xmlns:android...>
+ ...
+ <uses-permission android:name="android.permission.INTERNET" />
+ <application ...
+</manifest>
+
 ```
-
-
 
 ```
 
