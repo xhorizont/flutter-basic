@@ -18,7 +18,15 @@ flutter create --org com.myname my_app_name
 ```
 
 ```terminal
-test
+MaterialApp(
+  debugShowCheckedModeBanner: false,
+
+  home: Scaffold(
+    appBar: AppBar(
+      title: const Text('Home'),
+    ),
+  ),  
+);
 ```
 
 ```javascript
