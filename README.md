@@ -13,29 +13,7 @@ Flutter basic tutorial
   - https://docs.flutter.dev/get-started/install/macos
   - https://docs.flutter.dev/get-started/install/linux
 
-```bash
-flutter create --org com.myname my_app_name
-```
-
-```terminal
-MaterialApp(
-  debugShowCheckedModeBanner: false,
-
-  home: Scaffold(
-    appBar: AppBar(
-      title: const Text('Home'),
-    ),
-  ),  
-);
-```
-
-```javascript
-void main() {
-  print("Flutter is amazing");
-  print(
-      "Flutter Example apps repo is the collections of awesome apps built with flutter");
-}
-```
+# Preverjanje Flutter Doctor
 
 ```bash
 PS C:\Users\johnny\Desktop\DEV\xhorizont\flutter-basic\sample-1> flutter doctor
@@ -57,6 +35,38 @@ Doctor summary (to see all details, run flutter doctor -v):
 [√] Connected device (3 available)
 [√] Network resources
 ```
+# Ustvarimo prvo aplikacijo
+
+```bash
+flutter create --org com.myname my_app_name
+```
+
+# Preverimo delovanje v simulatorju
+
+# Onemogočimo Debug Banner
+
+```terminal
+MaterialApp(
+  debugShowCheckedModeBanner: false,
+
+  home: Scaffold(
+    appBar: AppBar(
+      title: const Text('Home'),
+    ),
+  ),  
+);
+```
+
+
+```javascript
+void main() {
+  print("Flutter is amazing");
+  print(
+      "Flutter Example apps repo is the collections of awesome apps built with flutter");
+}
+```
+
+
 
 ```
 
