@@ -59,7 +59,7 @@ MaterialApp(
   ),  
 );
 ```
-
+# PRAVA APLIKACIJA
 # Dodamo dostop do interneta
 
 /android/app/src/main/AndroidManifest. Xml
@@ -67,13 +67,155 @@ MaterialApp(
 
 ```javascript
 <manifest xmlns:android...>
- ...
+ 
  <uses-permission android:name="android.permission.INTERNET" />
  <application ...
 </manifest>
-
 ```
 
+# Dodamo webview_flutter v pubspec.yaml
+
+https://pub.dev/packages/flutter_inappwebview
+
+```javascript
+ $ flutter pub add flutter_inappwebview
+```
+ali v pubspec.yaml
+
+```javascript
+dependencies:
+  flutter_inappwebview: ^5.7.2+3
+```
+Uporaba v kodi
+```javascript
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 ```
 
+# Pobrišemo vsebino main.dart in prilepimo
+
+```javascript
+import 'package:flutter/material.dart';
+import 'mywebsite.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Test',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Naša super aplikacija"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const MyWebsite()));
+          },
+          child: const Text('Naprej'),
+        ),
+      ),
+    );
+  }
+}
+
 ```
+# V mapi /lib ustvarimo datoteko mywebsite.dart in prilepimo
+
+```javascript
+import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+
+class MyWebsite extends StatefulWidget {
+  const MyWebsite({Key? key}) : super(key: key);
+  @override
+  State<MyWebsite> createState() => _MyWebsiteState();
+}
+
+class _MyWebsiteState extends State<MyWebsite> {
+  double _progress = 0;
+  late InAppWebViewController inAppWebViewController;
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      onWillPop: () async {
+        var isLastPage = await inAppWebViewController.canGoBack();
+        if (isLastPage) {
+          inAppWebViewController.goBack();
+          return false;
+        }
+        return true;
+      },
+      child: SafeArea(
+        child: Scaffold(
+          body: Stack(
+            children: [
+              InAppWebView(
+                initialUrlRequest:
+                    URLRequest(url: Uri.parse("https://telekom.si/")),
+                onWebViewCreated: (InAppWebViewController controller) {
+                  inAppWebViewController = controller;
+                },
+                onProgressChanged:
+                    (InAppWebViewController controller, int progress) {
+                  setState(() {
+                    _progress = progress / 100;
+                  });
+                },
+              ),
+              _progress < 1
+                  ? LinearProgressIndicator(
+                      value: _progress,
+                    )
+                  : const SizedBox()
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+```
+# V android/app/build.gradle spremenimo
+
+```javascript
+minSdkVersion flutter.minSdkVersion
+```
+v 
+
+```javascript
+minSdkVersion 17
+```
+
+# Spremenimo ime pod ikono
+
+android/app/src/main/AndroidManifest.xml
+
+// staro
+<application
+     android:label="sampletwo"
+     android:icon="@mipmap/ic_launcher">
+// novo
+<application
+     android:label="Super App"
+     android:icon="@mipmap/ic_launcher">
