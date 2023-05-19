@@ -18,6 +18,9 @@ Flutter basic tutorial
  - https://app.quicktype.io/ - generate Dart from JSON
  - https://flutterflow.io/ - WYSIWYG Urejevalnik (plačljivo)
  - https://firebase.google.com/ - Firebase, analitika, baza podatkov, prijava v aplikacijo,...
+ - https://onesignal.com/ - Potisna sporočila
+ - https://rxlabz.github.io/panache/#/ - Panache je orodje za urejanje gradnikov Flutter
+ - https://www.supernova.io/ - orodje za razvoj aplikacij Flutter
 
 # Preverjanje Flutter Doctor
 
