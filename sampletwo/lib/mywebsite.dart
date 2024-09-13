@@ -27,7 +27,7 @@ class _MyWebsiteState extends State<MyWebsite> {
             children: [
               InAppWebView(
                 initialUrlRequest:
-                    URLRequest(url: Uri.parse("https://telekom.si/")),
+                    URLRequest(url: Uri.parse("https://moj.telekom.si/")),
                 onWebViewCreated: (InAppWebViewController controller) {
                   inAppWebViewController = controller;
                 },
